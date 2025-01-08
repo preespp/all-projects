@@ -1,5 +1,9 @@
-# Cleanfolio Minimal
+# Cleanfolio template
+source: https://github.com/rjshkhr/cleanfolio-minimal?tab=readme-ov-file
 
-https://github.com/rjshkhr/cleanfolio-minimal?tab=readme-ov-file
+This is for all projects' detail.
 
-A portfolio template built with HTML, CSS, and JavaScript.
+## Tech Stack
+- HTML
+- CSS
+- JavaScript

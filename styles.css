@@ -212,6 +212,11 @@ button {
   align-items: center;
 }
 
+.left {
+  display: flex;
+  align-items: left;
+}
+
 .header {
   height: 8em;
   max-width: 1100px;
