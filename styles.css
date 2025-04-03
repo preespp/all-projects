@@ -215,6 +215,7 @@ button {
 .left {
   display: flex;
   align-items: left;
+  margin-top: 1em;
 }
 
 .header {
