@@ -61,3 +61,27 @@ const scrollUp = () => {
 }
 
 document.addEventListener('scroll', scrollUp)
+
+const stackedStates = {};
+
+function slideProjects(sliderId, direction) {
+	const slider = document.getElementById(sliderId);
+	const cards = slider.querySelectorAll('.card');
+	const total = cards.length;
+  
+	if (!slider || total === 0) return;
+  
+	if (!(sliderId in stackedStates)) stackedStates[sliderId] = 0;
+  
+	let current = stackedStates[sliderId];
+	current = (current + direction + total) % total;
+	stackedStates[sliderId] = current;
+  
+	cards.forEach((card, idx) => {
+	  card.classList.remove('active');
+	  if (idx === current) card.classList.add('active');
+	});
+  
+	cards[current].scrollIntoView({ behavior: 'smooth', inline: 'center' });
+  }
+  
