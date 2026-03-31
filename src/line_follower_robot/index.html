@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <title>Pree Simphliphan</title>
+</head>
+<body class="light" id="top">
+    <header class="header center">
+        <h3>
+          <a href="https://preespp.github.io" class="link">Pree Simphliphan</a>
+        </h3>
+        <nav class="nav center">
+          <ul class="nav__list center">
+            <li class="nav__list-item">
+              <a class="link link--nav" href="../../index.html">All Projects</a>
+            </li>
+          </ul>
+          <button type="button" aria-label="toggle theme" class="btn btn--icon">
+            <span aria-hidden="true" id="btn-theme" class="icon icon--theme">&#9789;</span>
+          </button>
+          <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+           <span aria-hidden="true" id="btn-hamburger" class="icon icon--menu">&#9776;</span>
+          </button>
+        </nav>
+      </header>
+    <main>
+          <div class="subpage-back">
+            <a href="../../index.html" class="btn btn--outline">Back to All Projects</a>
+          </div>
+          <div class="about center">
+            <h1 class="center">2-Wheel Line Follower Robot</h1>
+            <h4 class="about__role center">Spring 2025</h4>
+          </div>
+          <div class="about left">
+            <p class="left">
+              This project involved building a two-wheel line-following robot for robotics class using a Libre Computer as the embedded platform.
+            </p>
+            <p class="left">
+              Development included Python and ROS2 integration, camera-based line detection, motor encoder feedback, differential-drive kinematic modeling, and PID-based control.
+            </p>
+            <p class="left">
+              I also developed interfaces for live visualization of heading, linear speed, and angular speed.
+            </p>
+          </div>
+          <div class="about left">
+            <p class="about__desc left">
+              <h5>My responsibilities</h5>
+              <li>Developed a robot with Python and ROS2 on Libre Computer, integrating a camera for line detection and motor encoders for differential-drive kinematic modeling</li>
+              <li>Implemented a ROS2 package with nodes for image segmentation, motor commands, and a PID controller, publishing velocity commands and tracking error signals</li>
+              <li>Developed rqt and dashboard interfaces to visualize heading, linear speed, and angular speed</li>
+            </p>
+          </div>
+          <!-- Placeholder image removed until a real line-following robot photo is added.
+          <div class="about center">
+            <img src="../Project Photo/ProjectTempBox.png" alt="line follower robot placeholder" width="620" height="360">
+            <p class="about__desc">Temporary project image placeholder for the line follower robot</p>
+          </div>
+          -->
+    </main>
+    <footer class="footer">
+    </footer>
+    <div class="scroll-container">
+    <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+        <span aria-hidden="true" class="icon icon--top">&#8593;</span>
+        </a>
+    </div>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+</html>

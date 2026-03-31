@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <title>Pree Simphliphan</title>
+</head>
+<body class="light" id="top">
+    <header class="header center">
+        <h3>
+          <a href="https://preespp.github.io" class="link">Pree Simphliphan</a>
+        </h3>
+        <nav class="nav center">
+          <ul class="nav__list center">
+            <li class="nav__list-item">
+              <a class="link link--nav" href="../../index.html">All Projects</a>
+            </li>
+          </ul>
+          <button type="button" aria-label="toggle theme" class="btn btn--icon">
+            <span aria-hidden="true" id="btn-theme" class="icon icon--theme">&#9789;</span>
+          </button>
+          <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+           <span aria-hidden="true" id="btn-hamburger" class="icon icon--menu">&#9776;</span>
+          </button>
+        </nav>
+      </header>
+    <main>
+          <div class="subpage-back">
+            <a href="../../index.html" class="btn btn--outline">Back to All Projects</a>
+          </div>
+          <div class="about center">
+            <h1 class="center">GOFR</h1>
+            <h1 class="center">Grocery Operational Fulfillment Robot</h1>
+            <h4 class="about__role center">Senior Design Project, Sep 2025 - May 2026</h4>
+          </div>
+          <div class="about left">
+            <p class="left">
+              GOFR is a MechE x ECE Senior Design 2025-26 student self-defined project and a SICK $10K Challenge 2025-26 finalist. The project focuses on building an autonomous robot to assist with employee stocking and customer shopping in a grocery store.
+            </p>
+            <p class="left">
+              The robot combines a functional robotic arm, sensors, cameras, and AI to support navigation, perception, manipulation, and task execution in a grocery environment.
+            </p>
+            <p class="left">
+              I worked in a team of 6 and contributed across software architecture, robotics autonomy, backend integration, and system-level hardware and sensing integration.
+            </p>
+          </div>
+          <div class="about left">
+            <p class="about__desc left">
+              <h5>My responsibilities</h5>
+              <li>Developed an autonomous robot with a functional robotic arm, sensors, cameras, and AI to assist in employee stocking and customer shopping in a grocery store</li>
+              <li>Designed system architecture and Behavior Tree-driven task management for high-level autonomy, coordinating navigation, perception, manipulation, and recovery behaviors via ROS2 services and actions</li>
+              <li>Performed system integration across perception, sensor, and actuator modules, including real-time collision detection using ultrasonic sensor data over I2C and UART with ESP32 and closed-loop control of the robotic arm</li>
+              <li>Developed Node.js REST APIs for online order submission to robotic task execution</li>
+              <li>Configured Firebase for inventory report and user database</li>
+              <li>Led Agile development using Jira and GitHub with prototyping, design, and system integration in a team of 6</li>
+            </p>
+          </div>
+          <div class="about center">
+            <div class="about__contact">
+              <a href="https://github.com/preespp/EC463_Team_21_Grocery_Robot">
+                <span class="btn btn--outline">GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div class="about center">
+            <img src="gofr.png" alt="GOFR project" width="700" height="380">
+            <p class="about__desc">GOFR project preview</p>
+          </div>
+    </main>
+    <footer class="footer">
+    </footer>
+    <div class="scroll-container">
+    <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+        <span aria-hidden="true" class="icon icon--top">&#8593;</span>
+        </a>
+    </div>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+</html>

@@ -10,10 +10,6 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
     rel="stylesheet"
     />
-    <script
-    src="https://kit.fontawesome.com/fa62c117c7.js"
-    crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="../../styles.css" />
     <title>Pree Simphliphan</title>
 </head>
@@ -31,16 +27,19 @@
           </ul>
   
           <button type="button" aria-label="toggle theme" class="btn btn--icon">
-            <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+            <span aria-hidden="true" id="btn-theme" class="icon icon--theme">&#9789;</span>
           </button>
   
           <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
-           <i aria-hidden="true" class="fas fa-bars"></i>
+           <span aria-hidden="true" id="btn-hamburger" class="icon icon--menu">&#9776;</span>
           </button>
         </nav>
       </header>
 
     <main>
+          <div class="subpage-back">
+            <a href="../../index.html" class="btn btn--outline">Back to All Projects</a>
+          </div>
           <div class="about center">
             <h1 class="center">Room Occupancy Monitor</h1>
             <h1 class="center">Embedded Firmware Device</h1>
@@ -56,8 +55,7 @@
               and even has an opportunituy to practice presenting and selling our work to client.
             </p>
             <p class="left">
-              As I would like to learn the concept of IoT, after finishing up my part in Embedded Systems, I used ESP32 as a WiFi interface to connect our current firmware with web application hosted in ESP32
-              while still accessing online. It was excited to get hands-on experience with the embedded systems and self-taught before taking advanced concepts class focusing on more low-level side in the future.
+              I extended the system with ESP32-based IoT capability through UART communication, connecting the embedded firmware to a web interface while still supporting online access and remote monitoring.
             </p>
             <p class="left">
               &emsp; &emsp;Team Members: Bach Nguyen, Caleb Schwartz, Camellia Mohamed
@@ -66,12 +64,16 @@
           <div class="about left">
             <p class="about__desc left">
               <h5>My responsibilities</h5>
-              <li>Programmed Firmware to control sensor data, planned C++ code flowchart, and stored code in version control (Git)</li>
-              <li>Optimized the components selection to reduce the client's requirement cost by 40.66%</li>
-              <li>Functioned IoT capabilities by supplementing an ESP32 as a WiFi interface via UART communication</li>
+              <li>Built a room capacity monitor box that used sensor data and a mechanical actuator to prevent overcrowding</li>
+              <li>Optimized the component selection to reduce the client requirement cost by 41%</li>
+              <li>Programmed firmware in C++ and added IoT capabilities with ESP32 via UART communication</li>
               <li>Conducted rigorous electrical wiring, product assembly, and product testing, ensuring adherence to design specifications</li>
-              <li>Contributed to Preliminary Design Report, Final Reports and presentation, along with planning Gantt's chart for weekly tasks</li>
+              <li>Facilitated weekly tasks using a Gantt chart and wrote preliminary design and final reports with a team of 4</li>
             </p>
+          </div>
+          <div class="about center">
+            <img src="CADRoomBox.png" alt="room occupancy monitor prototype" width="605" height="515" >
+            <p class="about__desc">CAD Design</p>
           </div>
           <div class="about center">
             <img src="RoomBoxPrototype.jpg" alt="room occupancy monitor prototype" width="605" height="515" >
@@ -82,6 +84,11 @@
             <p class="about__desc">Final Product</p>
           </div>
           <div class="about center">
+            <div class="about__contact">
+              <a href="https://github.com/preespp/Room-Occupancy-Monitor">
+                <span class="btn btn--outline">GitHub</span>
+              </a>
+            </div>
             <div class="about__contact">
               <iframe src="https://docs.google.com/document/d/e/2PACX-1vQWZyZMg1FewzHi46DjVht2dqE7_5Jq6c9aq3tyPF6p_inLLxGLeNcW6LNiGYBP5U6eEqxQp5V-pqhD/pub?embedded=true" width="825" height="500"></iframe>
             </div>
@@ -104,7 +111,7 @@
     <div class="scroll-container">
     <div class="scroll-top">
         <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        <span aria-hidden="true" class="icon icon--top">&#8593;</span>
         </a>
     </div>
     </div>

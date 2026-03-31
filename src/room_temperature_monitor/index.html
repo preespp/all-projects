@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <title>Pree Simphliphan</title>
+</head>
+<body class="light" id="top">
+    <header class="header center">
+        <h3>
+          <a href="https://preespp.github.io" class="link">Pree Simphliphan</a>
+        </h3>
+        <nav class="nav center">
+          <ul class="nav__list center">
+            <li class="nav__list-item">
+              <a class="link link--nav" href="../../index.html">All Projects</a>
+            </li>
+          </ul>
+          <button type="button" aria-label="toggle theme" class="btn btn--icon">
+            <span aria-hidden="true" id="btn-theme" class="icon icon--theme">&#9789;</span>
+          </button>
+          <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+           <span aria-hidden="true" id="btn-hamburger" class="icon icon--menu">&#9776;</span>
+          </button>
+        </nav>
+      </header>
+    <main>
+          <div class="subpage-back">
+            <a href="../../index.html" class="btn btn--outline">Back to All Projects</a>
+          </div>
+          <div class="about center">
+            <h1 class="center">Room Temperature Monitor</h1>
+            <h4 class="about__role center">Spring 2023</h4>
+          </div>
+          <div class="about left">
+            <p class="left">
+              Room Temperature Monitor is a device built to measure room temperature with sensors, display the measured values, and alert the user with sound when needed.
+            </p>
+            <p class="left">
+              The project combined enclosure design, circuit design, soldering, and Arduino programming into one complete prototype.
+            </p>
+            <p class="left">
+              It was one of my earliest hands-on engineering builds that connected sensor input, hardware packaging, and user-facing output behavior.
+            </p>
+          </div>
+          <div class="about left">
+            <p class="about__desc left">
+              <h5>My responsibilities</h5>
+              <li>Designed interior components and circuits using Onshape and TinkerCAD</li>
+              <li>Wired and soldered the circuit inside the box enclosure</li>
+              <li>Coded in Arduino to operate the monitor for indicating room temperature and alerting out-of-range temperature</li>
+            </p>
+          </div>
+          <div class="about center">
+            <img src="RealBox.png" alt="room temperature monitor prototype" width="620" height="360">
+            <p class="about__desc">Room temperature monitor prototype</p>
+          </div>
+          <div class="about center">
+            <img src="ProjectTempBox.png" alt="room temperature monitor cad" width="620" height="360">
+            <p class="about__desc">CAD design for the room temperature monitor</p>
+          </div>
+    </main>
+    <footer class="footer">
+    </footer>
+    <div class="scroll-container">
+    <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+        <span aria-hidden="true" class="icon icon--top">&#8593;</span>
+        </a>
+    </div>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+</html>

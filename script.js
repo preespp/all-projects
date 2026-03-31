@@ -1,11 +1,13 @@
 const body = document.body
 
-const btnTheme = document.querySelector('.fa-moon')
-const btnHamburger = document.querySelector('.fa-bars')
+const btnTheme = document.querySelector('button[aria-label="toggle theme"]')
+const btnThemeIcon = document.getElementById('btn-theme')
+const btnHamburger = document.querySelector('.nav__hamburger')
+const btnHamburgerIcon = document.getElementById('btn-hamburger')
 
 const addThemeClass = (bodyClass, btnClass) => {
-  body.classList.add(bodyClass)
-  btnTheme.classList.add(btnClass)
+  if (bodyClass) body.classList.add(bodyClass)
+  if (btnClass) btnThemeIcon.dataset.themeIcon = btnClass
 }
 
 const getBodyTheme = localStorage.getItem('portfolio-theme')
@@ -15,12 +17,17 @@ addThemeClass(getBodyTheme, getBtnTheme)
 
 const isDark = () => body.classList.contains('dark')
 
-const setTheme = (bodyClass, btnClass) => {
+const syncThemeIcon = () => {
+	btnThemeIcon.textContent = isDark() ? '☀' : '☾'
+}
 
-	body.classList.remove(localStorage.getItem('portfolio-theme'))
-	btnTheme.classList.remove(localStorage.getItem('portfolio-btn-theme'))
+const setTheme = (bodyClass, btnClass) => {
+	const currentBodyTheme = localStorage.getItem('portfolio-theme')
+
+	if (currentBodyTheme) body.classList.remove(currentBodyTheme)
 
   addThemeClass(bodyClass, btnClass)
+	syncThemeIcon()
 
 	localStorage.setItem('portfolio-theme', bodyClass)
 	localStorage.setItem('portfolio-btn-theme', btnClass)
@@ -29,19 +36,22 @@ const setTheme = (bodyClass, btnClass) => {
 const toggleTheme = () =>
 	isDark() ? setTheme('light', 'fa-moon') : setTheme('dark', 'fa-sun')
 
+syncThemeIcon()
 btnTheme.addEventListener('click', toggleTheme)
 
 const displayList = () => {
 	const navUl = document.querySelector('.nav__list')
 
-	if (btnHamburger.classList.contains('fa-bars')) {
-		btnHamburger.classList.remove('fa-bars')
-		btnHamburger.classList.add('fa-times')
-		navUl.classList.add('display-nav-list')
-	} else {
-		btnHamburger.classList.remove('fa-times')
-		btnHamburger.classList.add('fa-bars')
+	if (btnHamburger.dataset.open === 'true') {
+		btnHamburger.dataset.open = 'false'
+		btnHamburgerIcon.textContent = '\u2630'
+		btnHamburger.setAttribute('aria-label', 'toggle navigation')
 		navUl.classList.remove('display-nav-list')
+	} else {
+		btnHamburger.dataset.open = 'true'
+		btnHamburgerIcon.textContent = '\u2715'
+		btnHamburger.setAttribute('aria-label', 'toggle navigation')
+		navUl.classList.add('display-nav-list')
 	}
 }
 

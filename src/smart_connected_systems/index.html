@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <title>Pree Simphliphan</title>
+</head>
+<body class="light" id="top">
+    <header class="header center">
+        <h3>
+          <a href="https://preespp.github.io" class="link">Pree Simphliphan</a>
+        </h3>
+        <nav class="nav center">
+          <ul class="nav__list center">
+            <li class="nav__list-item">
+              <a class="link link--nav" href="../../index.html">All Projects</a>
+            </li>
+          </ul>
+          <button type="button" aria-label="toggle theme" class="btn btn--icon">
+            <span aria-hidden="true" id="btn-theme" class="icon icon--theme">&#9789;</span>
+          </button>
+          <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+           <span aria-hidden="true" id="btn-hamburger" class="icon icon--menu">&#9776;</span>
+          </button>
+        </nav>
+      </header>
+    <main>
+          <div class="subpage-back">
+            <a href="../../index.html" class="btn btn--outline">Back to All Projects</a>
+          </div>
+          <div class="about center">
+            <h1 class="center">5 Smart & Connected Systems Projects</h1>
+            <h4 class="about__role center">Fall 2024</h4>
+          </div>
+          <div class="about left">
+            <p class="left">
+              This page groups five Smart and Connected Systems projects completed in Fall 2024, all centered on embedded firmware, networking, sensing, and cyber-physical systems.
+            </p>
+            <p class="left">
+              The project set included Indoor Robot Navigation, E-Voting with Distributed Systems, FitCat, Smart Cat Collar, and Smart Pill.
+            </p>
+            <p class="left">
+              Together these projects emphasized RTOS-based firmware, ESP32 development, Node.js backends, sensors, networking, and real-time system behavior.
+            </p>
+          </div>
+          <div class="about left">
+            <p class="about__desc left">
+              <h5>Indoor Robot Navigation System Development</h5>
+              <li>Delivered C firmware for an ESP32 microcontroller with RTOS, control algorithms, feedback-based navigation, and wireless remote functionality</li>
+              <li>Created wireless control for manual operation using WASD keyboard inputs</li>
+              <li>Designed obstacle avoidance using ultrasonic and IR sensors, integrating Optitrack position tracking via a Node.js server over UDP</li>
+              <li>Built a 2D visualization of robot paths and waypoints using Streamlit and TingoDB</li>
+              <h5>E-Voting System with Distributed Systems</h5>
+              <li>Designed an electronic voting system using NFC-enabled fob devices and IR communication for vote transmission</li>
+              <li>Implemented a Bully algorithm for coordinator election to ensure resilience and continuity</li>
+              <li>Developed a Node.js server for vote logging, tabulation, and web visualization on Raspberry Pi</li>
+              <h5>FitCat</h5>
+              <li>Designed a distributed system of multiple ESP32 cat trackers to transmit data over WiFi to a central server</li>
+              <li>Developed a Node.js-based web portal on Raspberry Pi with live leaderboards, Canvas.js charts, and status updates sent back to trackers</li>
+              <li>Configured a webcam feed into the web portal and established robust networking with static IPs, port forwarding, and DDNS</li>
+              <h5>Smart Cat Collar</h5>
+              <li>Designed a wearable device using an accelerometer and ESP32 to classify cat activity states and durations while displaying current activity and elapsed time</li>
+              <li>Programmed real-time serial data transmission for time, temperature, and activity visualization in Canvas.js charts</li>
+              <li>Integrated I2C communication, button-triggered displays, and buzzer functionality</li>
+              <h5>Smart Pill</h5>
+              <li>Developed an embedded system using ESP32 for a diagnostic pill to read, log, and display sensor data in real time</li>
+              <li>Implemented periodic cycles to measure and report temperature, light levels, battery voltage, and tilt in engineering units over a serial interface</li>
+              <li>Designed real-time functionality using an RTOS, hardware interfaces, a voltage divider, and I/O interrupts</li>
+            </p>
+          </div>
+          <!-- Placeholder image removed until project-specific photos are added.
+          <div class="about center">
+            <img src="../Project Photo/ProjectTempBox.png" alt="smart connected systems placeholder" width="620" height="360">
+            <p class="about__desc">Temporary project image placeholder for the smart and connected systems projects</p>
+          </div>
+          -->
+    </main>
+    <footer class="footer">
+    </footer>
+    <div class="scroll-container">
+    <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+        <span aria-hidden="true" class="icon icon--top">&#8593;</span>
+        </a>
+    </div>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+</html>

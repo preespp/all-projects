@@ -10,10 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Pree Simphliphan</title>
   </head>
@@ -31,11 +27,11 @@
         </ul>
 
         <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+          <span aria-hidden="true" id="btn-theme" class="icon icon--theme">&#9789;</span>
         </button>
 
         <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
-         <i aria-hidden="true" class="fas fa-bars"></i>
+         <span aria-hidden="true" id="btn-hamburger" class="icon icon--menu">&#9776;</span>
         </button>
       </nav>
     </header>
@@ -47,11 +43,34 @@
           <button class="slider-btn left" onclick="slideProjects('slider1', -1)">&#10094;</button>
       
           <div class="stacked-slider" id="slider1">
+                        <div class="card" style="background-image: url('src/')">
+              <div class="card-content">
+                <h3>MakeMIT x Harvard 2026: ALICE AI Life Improvement & Care Expert</h3>
+                <p class="project__description">
+                  A local-first AI smart pill dispenser designed to help people manage multiple medications safely at home. ALICE combines face recognition,
+                  guided dispensing, and contextual health support in a more private and practical home-care device.
+                </p>
+                <ul class="project__stack">
+                  <li class="project__stack-item">AI</li>
+                  <li class="project__stack-item">Backend API</li>
+                  <li class="project__stack-item">ESP32</li>
+                  <li class="project__stack-item">Gemini API</li>
+                  <li class="project__stack-item">Embedded Systems</li>
+                </ul>
+                <a
+                  href="src/alice/index.html"
+                  aria-label="live preview"
+                  class="link link--icon"
+                >
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
+              </div>
+            </div>
             <div class="card" style="background-image: url('src/')">
               <div class="card-content">
-                <h3>Coin Collector Robot</h3>
+                <h3>BU Robotics Hackathon 2025: Coin Collector Robot (1st place)</h3>
                 <p class="project__description">
-                  As team of 4, we tackled challenge in Robotics Hackathon 2025. We developed magnetic delivery mechanism to collect
+                  As team of 4, we tackled challenge in BU Robotics Hackathon 2025. We developed magnetic delivery mechanism to collect
                   and transport small magnetic coins to the bin and score the most points to win 1st place in the competition with one round
                   of sweeping the arena!
                 </p>
@@ -62,18 +81,18 @@
                   <li class="project__stack-item">3D printing</li>
                   <li class="project__stack-item">Assembly</li>
                 </ul>
-                <!-- <a
-                  href="src/"
+                <a
+                  href="src/coin_collector_robot/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-                </a> -->
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
               </div>
             </div>            
             <div class="card" style="background-image: url('src/')">
               <div class="card-content">
-                <h3>Mar Rovers</h3>
+                <h3>University Rover Challenge 2024-25: Mars Rover</h3>
                 <p class="project__description">
                   Projects under BU Mars Rover Club, we built to a rover powered by NVIDIA Jetson AGX Orin to University Rover Challenge in Utah. My tasks are under Electrical, Robotics and Software sub-teams.
                   I am also Electrical Deputy Lead during Fall 2024 and interim ELectrical Lead during Spring 2025.
@@ -92,18 +111,11 @@
                   <li class="project__stack-item">Wireless Communication</li>
                 </ul>
                 <a
-                  href="https://github.com/BUMRC"
-                  aria-label="source code"
-                  class="link link--icon"
-                >
-                  <i aria-hidden="true" class="fab fa-github"></i>
-                </a>
-                <a
                   href="src/bumrc/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
                 </a>
               </div> 
             </div>
@@ -122,17 +134,17 @@
                   <li class="project__stack-item">Git</li>
                 </ul>
                 <a
-                  href="https://github.com/preespp/preespp.github.io"
-                  aria-label="source code"
+                  href="src/engineering_portfolio/index.html"
+                  aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fab fa-github"></i>
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
                 </a>
               </div>
             </div>
             <div class="card" style="background-image: url('src/')">
               <div class="card-content">
-                <h3>DBF Glider & Main Plane</h3>
+                <h3>AIAA Design/Build/Fly (DBF) 2024-25: Glider & Main Plane</h3>
                 <p class="project__description">
                   Project under BU AIAA (Design/Build/Fly team), we built to a plane to DBF Competition 2025 (Arizona); I am part of Electronics & Propulsion System team
                 </p>
@@ -140,18 +152,18 @@
                   <li class="project__stack-item">KiCAD</li>
                   <li class="project__stack-item">Electrical</li>
                 </ul>
-                <!-- <a
-                  href="src/"
+                <a
+                  href="src/dbf_glider_main_plane/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-                </a> -->
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
               </div>
             </div>
             <div class="card" style="background-image: url('src/')">
               <div class="card-content">
-                <h3>Smart Lamp</h3>
+                <h3>Lutron Light Competition 2024: Smart Lamp</h3>
                 <p class="project__description">
                   Firmware Development for Smart Device that can automatically turn on and adjust its brightness and color based on distance between users and source and room environment based on sensors.
                   This project was conducted for Lutron Light Competition 2024.
@@ -164,24 +176,17 @@
                   <li class="project__stack-item">Sensors</li>
                 </ul>
                 <a
-                  href="https://github.com/preespp/Smart-Lamp"
-                  aria-label="source code"
-                  class="link link--icon"
-                >
-                  <i aria-hidden="true" class="fab fa-github"></i>
-                </a>
-                <!-- <a
-                  href="src/"
+                  href="src/smart_lamp/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-                </a> -->
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
               </div>
             </div>
             <div class="card" style="background-image: url('src/')">
               <div class="card-content">
-                <h3>Smart Fan</h3>
+                <h3>BU Hardware Hackathon 2023: Smart Fan (3rd place)</h3>
                 <p class="project__description">
                   3rd place Hardware Hackathon 2023 as team of 2, Firmware Development for Medical Device that measures the user's heart rate and activate cool down system to reduce body`s stress
                 </p>
@@ -191,18 +196,104 @@
                   <li class="project__stack-item">Electrical</li>
                   <li class="project__stack-item">Sensors</li>
                 </ul>
-                <!-- <a
-                  href="src/bumrc/index.html"
+                <a
+                  href="src/smart_fan/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-                </a> -->
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
               </div>
             </div>
           </div>
       
           <button class="slider-btn right" onclick="slideProjects('slider1', 1)">&#10095;</button>
+        </div>
+      </section>
+
+      <section class="section projects">
+        <h2 class="section__title">Senior Class Projects</h2>
+        <div class="stacked-slider-wrapper">
+          <button class="slider-btn left" onclick="slideProjects('slider2', -1)">&#10094;</button>
+
+          <div class="stacked-slider" id="slider2">
+            <div class="card" style="background-image: url('src/')">
+              <div class="card-content">
+                <h3>SICK $10K Challenge 2025-26 Finalist: GOFR Grocery Operational Fulfillment Robot</h3>
+                <p class="project__description">
+                  An autonomous grocery-assistance robot that combines AI, perception, and robotic manipulation to support store restocking and customer shopping.
+                  Student-proposed Senior design project and SICK $10K Challenge 2025-26 finalist.
+                  Accepted to Capstone Design Conference 2026 at College Station, Texas in June 2026.
+                </p>
+                <ul class="project__stack">
+                  <li class="project__stack-item">ROS2</li>
+                  <li class="project__stack-item">AI</li>
+                  <li class="project__stack-item">Robotics</li>
+                  <li class="project__stack-item">Embedded Systems</li>
+                  <li class="project__stack-item">PostgreSQL</li>
+                  <li class="project__stack-item">Gemini API</li>
+                  <li class="project__stack-item">Node.js</li>
+                  <li class="project__stack-item">ESP32</li>
+                </ul>
+                <a
+                  href="src/gofr/index.html"
+                  aria-label="live preview"
+                  class="link link--icon"
+                >
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
+              </div>
+            </div>
+            <div class="card" style="background-image: url('src/')">
+              <div class="card-content">
+                <h3>Extending Site Reliability Engineering Fault Mechanisms within ITBench</h3>
+                <p class="project__description">
+                  Open-source research project under IBM engineers mentorship to make AI-agent benchmarking more realistic for site reliability engineering tasks
+                  in Kubernetes microservices environments.
+                </p>
+                <ul class="project__stack">
+                  <li class="project__stack-item">Kubernetes</li>
+                  <li class="project__stack-item">Docker</li>
+                  <li class="project__stack-item">Prometheus</li>
+                  <li class="project__stack-item">Jaeger</li>
+                  <li class="project__stack-item">OpenTelemetry</li>
+                </ul>
+                <a
+                  href="src/itbench/index.html"
+                  aria-label="live preview"
+                  class="link link--icon"
+                >
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
+              </div>
+            </div>
+            <div class="card" style="background-image: url('src/')">
+              <div class="card-content">
+                <h3>Pintos Operating Systems Labs</h3>
+                <p class="project__description">
+                  Operating Systems course project sequence built around Pintos, covering kernel threads scheduling, user programs and system calls,
+                  virtual memory with demand paging, and memory-mapped files, with file systems as an optional extension.
+                </p>
+                <ul class="project__stack">
+                  <li class="project__stack-item">C</li>
+                  <li class="project__stack-item">Operating Systems</li>
+                  <li class="project__stack-item">Kernel</li>
+                  <li class="project__stack-item">Threads</li>
+                  <li class="project__stack-item">Virtual Memory</li>
+                  <li class="project__stack-item">System Calls</li>
+                </ul>
+                <a
+                  href="src/pintos_operating_systems/index.html"
+                  aria-label="live preview"
+                  class="link link--icon"
+                >
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider-btn right" onclick="slideProjects('slider2', 1)">&#10095;</button>
         </div>
       </section>
 
@@ -214,7 +305,7 @@
           <div class="stacked-slider" id="slider3">
             <div class="card" style="background-image: url('src/')">
               <div class="card-content">
-                <h3>Open Source Robotic Manipulation System</h3>
+                <h3>NCRC 2026 at Harvard University: Open Source Robotic Manipulation System</h3>
                 <p class="project__description"> 
                   An open source for low-cost robotics manipulation system integrating real-time object detection (YOLOv8) with multi-camera visual input, 
                   Vision-Language-Action Policies, and LeRobot-controlled 6-DOF arms from HuggingFace
@@ -229,19 +320,12 @@
                   <li class="project__stack-item">Git</li>
                 </ul>
                 <a
-                  href="https://github.com/preespp/augment-robot-arm-yolo-vla"
-                  aria-label="source code"
-                  class="link link--icon"
-                >
-                  <i aria-hidden="true" class="fab fa-github"></i>
-                </a>
-                <!-- <a
-                  href="src/"
+                  href="src/open_source_robotic_manipulation_system/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-                </a> -->
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
               </div>
             </div>
             <div class="card" style="background-image: url('src/')">
@@ -258,19 +342,12 @@
                   <li class="project__stack-item">Git</li>
                 </ul>
                 <a
-                  href="https://github.com/preespp/Embedded-Systems-Lab-HW"
-                  aria-label="source code"
-                  class="link link--icon"
-                >
-                  <i aria-hidden="true" class="fab fa-github"></i>
-                </a>
-                <!-- <a
-                  href="src/"
+                  href="src/embedded_linux_traffic_light/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-                </a> -->
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
               </div>
             </div>
             <div class="card" style="background-image: url('src/')">
@@ -290,13 +367,13 @@
                   <li class="project__stack-item">Motors</li>
                   <li class="project__stack-item">Assembly</li>
                 </ul>
-                <!-- <a
-                  href="src/"
+                <a
+                  href="src/line_follower_robot/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-                </a> -->
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
               </div>
             </div>
             <div class="card" style="background-image: url('src/')">
@@ -316,13 +393,13 @@
                   <li class="project__stack-item">Sensors</li>
                   <li class="project__stack-item">Git</li>
                 </ul>
-                <!-- <a
-                  href="src/"
+                <a
+                  href="src/smart_connected_systems/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-                </a> -->
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
               </div>
             </div>
             <div class="card" style="background-image: url('src/')">
@@ -337,13 +414,13 @@
                   <li class="project__stack-item">tcpdump</li>
                   <li class="project__stack-item">Linux</li>
                 </ul>
-                <!-- <a
-                  href="src/"
+                <a
+                  href="src/software_defined_networking/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-                </a> -->
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
               </div>
             </div>
           </div>
@@ -375,18 +452,11 @@
                   <li class="project__stack-item">Git</li>
                 </ul>
                 <a
-                  href="https://github.com/dzokha-true/Inventory_Optimizer"
-                  aria-label="source code"
-                  class="link link--icon"
-                >
-                  <i aria-hidden="true" class="fab fa-github"></i>
-                </a>
-                <a
                   href="src/inventory_optimizer/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
                 </a>
               </div>
             </div>
@@ -405,18 +475,11 @@
                   <li class="project__stack-item">Project Management</li>
                 </ul>
                 <a
-                  href="https://github.com/preespp/Room-Occupancy-Monitor"
-                  aria-label="source code"
-                  class="link link--icon"
-                >
-                  <i aria-hidden="true" class="fab fa-github"></i>
-                </a>
-                <a
                   href="src/room_occupancy_monitor/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
                 </a>
               </div>
             </div>
@@ -433,19 +496,12 @@
                   <li class="project__stack-item">CPU</li>
                 </ul>
                 <a
-                  href="https://github.com/preespp/Computer-Organization-Lab"
-                  aria-label="source code"
-                  class="link link--icon"
-                >
-                  <i aria-hidden="true" class="fab fa-github"></i>
-                </a>
-                <!-- <a
-                  href="src/"
+                  href="src/mips_pipeline_processor/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-                </a> -->
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
               </div>
             </div>
             <div class="card" style="background-image: url('src/')">
@@ -461,18 +517,11 @@
                   <li class="project__stack-item">Git</li>
                 </ul>
                 <a
-                  href="https://github.com/preespp/EC311-Logic-Design-Final-Project"
-                  aria-label="source code"
-                  class="link link--icon"
-                >
-                  <i aria-hidden="true" class="fab fa-github"></i>
-                </a>
-                <a
                   href="src/whack_mole_fpga/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
                 </a>
               </div>
             </div>
@@ -487,13 +536,13 @@
                   <li class="project__stack-item">Fabrication</li>
                   <li class="project__stack-item">Lab Testing</li>
                 </ul>
-                <!-- <a
-                  href="src/"
+                <a
+                  href="src/truss_design_optimizer/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-                </a> -->
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
               </div>
             </div>
           </div>
@@ -522,13 +571,13 @@
                   <li class="project__stack-item">Embedded Systems</li>
                   <li class="project__stack-item">Sensors</li>
                 </ul>
-                <!-- <a
-                  href="src/"
+                <a
+                  href="src/room_temperature_monitor/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-                </a> -->
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
               </div>
             </div>
             <div class="card" style="background-image: url('src/')">
@@ -542,13 +591,13 @@
                   <li class="project__stack-item">Machine Learning</li>
                   <li class="project__stack-item">Data Analysis</li>
                 </ul>
-                <!-- <a
-                  href="src/"
+                <a
+                  href="src/world_population_sustainability/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-                </a> -->
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
               </div>
             </div>
             <div class="card" style="background-image: url('src/')">
@@ -561,13 +610,13 @@
                   <li class="project__stack-item">Python</li>
                   <li class="project__stack-item">Pygame</li>
                 </ul>
-                <!-- <a
-                  href="src/"
+                <a
+                  href="src/connectfour_game/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
-                  <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-                </a> -->
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
               </div>
             </div>
           </div>
@@ -584,7 +633,7 @@
     <div class="scroll-container">
       <div class="scroll-top">
         <a aria-label="Scroll up" href="#top">
-          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+          <span aria-hidden="true" class="icon icon--top">&#8593;</span>
         </a>
       </div>
     </div>

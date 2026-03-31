@@ -10,10 +10,6 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
     rel="stylesheet"
     />
-    <script
-    src="https://kit.fontawesome.com/fa62c117c7.js"
-    crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="../../styles.css" />
     <title>Pree Simphliphan</title>
 </head>
@@ -31,16 +27,19 @@
           </ul>
   
           <button type="button" aria-label="toggle theme" class="btn btn--icon">
-            <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+            <span aria-hidden="true" id="btn-theme" class="icon icon--theme">&#9789;</span>
           </button>
   
           <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
-           <i aria-hidden="true" class="fas fa-bars"></i>
+           <span aria-hidden="true" id="btn-hamburger" class="icon icon--menu">&#9776;</span>
           </button>
         </nav>
       </header>
 
     <main>
+          <div class="subpage-back">
+            <a href="../../index.html" class="btn btn--outline">Back to All Projects</a>
+          </div>
           <div class="about center">
             <h1 class="center">Whack-a-Mole</h1>
             <h1 class="center">Game Development on FPGA</h1>
@@ -62,16 +61,22 @@
           <div class="about left">
             <p class="about__desc left">
               <h5>My responsibilities</h5>
-              <li>Orchestrating the development of a Whack-a-Mole game implemented on the Nexys Artix-7 FPGA board, employing Agile methodologies to enhance project agility and adaptability</li>
-              <li>Designing and documenting the system architecture using a structured methodology, including requirement analysis, system partitioning, and block diagram design</li>
-              <li>Integrating VGA graphics for first page, playing page, and ending page using FSM (Moore Machine), ensuring seamless transitions and visual clarity</li>
-              <li>Implementing a 30-second timer module with signal feedback control between modules to manage game duration effectively</li>
-              <li>Customizing game logic for 3 adjustable difficulty levels and optional non-VGA gameplay mode, enhancing user experience flexibility</li>
-              <li>Integrating all modules, Deploying and Testing the final product</li>
+              <li>Designed the system architecture, including requirement analysis, system partitioning, and block diagrams</li>
+              <li>Utilized Verilog HDL for game stages using digital logic design with FSMs in Vivado</li>
+              <li>Implemented a 30-second timer module with signal feedback control between modules to manage game duration effectively</li>
+              <li>Integrated VGA graphics and a robust mouse input interface using debouncing techniques</li>
+            </p>
           </div>
           <div class="about center">
             <img src="Mole.jpg" alt="Mole" width="500" >
             <p class="about__desc">Graphic Display on VGA</p>
+          </div>
+          <div class="about center">
+            <div class="about__contact">
+              <a href="https://github.com/preespp/EC311-Logic-Design-Final-Project">
+                <span class="btn btn--outline">GitHub</span>
+              </a>
+            </div>
           </div>
           <div class="about center">
             <div class="about__contact">
@@ -99,7 +104,7 @@
     <div class="scroll-container">
     <div class="scroll-top">
         <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        <span aria-hidden="true" class="icon icon--top">&#8593;</span>
         </a>
     </div>
     </div>

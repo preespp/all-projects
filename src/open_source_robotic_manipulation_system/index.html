@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+    <title>Pree Simphliphan</title>
+</head>
+<body class="light" id="top">
+    <header class="header center">
+        <h3>
+          <a href="https://preespp.github.io" class="link">Pree Simphliphan</a>
+        </h3>
+        <nav class="nav center">
+          <ul class="nav__list center">
+            <li class="nav__list-item">
+              <a class="link link--nav" href="../../index.html">All Projects</a>
+            </li>
+          </ul>
+          <button type="button" aria-label="toggle theme" class="btn btn--icon">
+            <span aria-hidden="true" id="btn-theme" class="icon icon--theme">&#9789;</span>
+          </button>
+          <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+           <span aria-hidden="true" id="btn-hamburger" class="icon icon--menu">&#9776;</span>
+          </button>
+        </nav>
+      </header>
+    <main>
+          <div class="subpage-back">
+            <a href="../../index.html" class="btn btn--outline">Back to All Projects</a>
+          </div>
+          <div class="about center">
+            <h1 class="center">Open Source Robotic Manipulation System</h1>
+            <h4 class="about__role center">Spring 2025</h4>
+          </div>
+          <div class="about left">
+            <p class="left">
+              This project developed a low-cost robotic manipulation system that combines real-time object detection, multi-camera perception, and LeRobot-controlled 6-DOF arms.
+            </p>
+            <p class="left">
+              It integrated YOLOv8, embedded vision streaming, dataset collection, behavior cloning, and mechanical integration to build an end-to-end manipulation platform.
+            </p>
+            <p class="left">
+              This work was accepted to the National Collegiate Research Conference (NCRC) 2026 and presented as a poster at Harvard University.
+            </p>
+          </div>
+          <div class="about left">
+            <p class="about__desc left">
+              <h5>My responsibilities</h5>
+              <li>Developed a low-cost robotic manipulation system integrating real-time object detection with multi-camera visual input and LeRobot-controlled 6-DOF arms</li>
+              <li>Accepted to National Collegiate Research Conference (NCRC) 2026 and presented a poster at Harvard University</li>
+              <li>Designed and implemented an embedded vision pipeline using the Seeed Studio XIAO ESP32S3 Sense module to stream MJPEG video over Wi-Fi for remote inference</li>
+              <li>Built datasets by aligning robot joint states with image frames and bounding boxes to train manipulation policies</li>
+              <li>Trained and deployed behavior cloning models including Diffusion Policy and Action Chunking Transformer with YOLO-based feature augmentation, achieving 50% one-shot success rates in Isaac Sim</li>
+              <li>Designed 3D-printed mounts and mechanical integration for the ESP32 camera system and UVC cameras</li>
+              <li>Contributed to firmware development in ESP-IDF, system calibration, and real-time control synchronization</li>
+            </p>
+          </div>
+          <div class="about center">
+            <div class="about__contact">
+              <a href="https://github.com/preespp/augment-robot-arm-yolo-vla">
+                <span class="btn btn--outline">GitHub</span>
+              </a>
+            </div>
+          </div>
+          <div class="about center">
+            <img src="ncrc.png" alt="robotic manipulation system project" width="700" height="380">
+            <p class="about__desc">Robotics Arm Manipulation System project image used for the NCRC 2026 submission</p>
+          </div>
+    </main>
+    <footer class="footer">
+    </footer>
+    <div class="scroll-container">
+    <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+        <span aria-hidden="true" class="icon icon--top">&#8593;</span>
+        </a>
+    </div>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+</html>
