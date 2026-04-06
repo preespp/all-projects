@@ -40,31 +40,52 @@
             <h1 class="center">2-Wheel Line Follower Robot</h1>
             <h4 class="about__role center">Spring 2025</h4>
           </div>
-          <div class="about left">
-            <p class="left">
-              This project involved building a two-wheel line-following robot for robotics class using a Libre Computer as the embedded platform.
-            </p>
-            <p class="left">
-              Development included Python and ROS2 integration, camera-based line detection, motor encoder feedback, differential-drive kinematic modeling, and PID-based control.
-            </p>
-            <p class="left">
-              I also developed interfaces for live visualization of heading, linear speed, and angular speed.
-            </p>
+          <div class="project-detail">
+            <section class="detail-card">
+              <h2>Project Description</h2>
+              <p>This project involved building a two-wheel line-following robot using a Libre Computer as the embedded platform. The robot combined camera-based perception, encoder feedback, and ROS2-based software to track a path and convert sensor input into stable motion.</p>
+              <p>I enjoyed this project because it tied together controls, perception, and robotics software in one system. It also pushed me to think carefully about how to model differential-drive motion and visualize what the controller was doing in real time. And, I enjoyed working in pair with classmates in each step of the development process.</p>
+            </section>
+            <section class="detail-card">
+              <h2>My Responsibilities</h2>
+              <ul class="detail-list">
+                <li>Developed the robot in Python and ROS2, integrating a camera for line detection and motor encoders for differential-drive modeling.</li>
+                <li>Implemented ROS2 nodes for image segmentation, motor commands, and PID control.</li>
+                <li>Published velocity commands and tracked error signals for controller tuning.</li>
+                <li>Built rqt and dashboard interfaces to visualize heading, linear speed, and angular speed.</li>
+              </ul>
+            </section>
+            <section class="detail-card">
+              <h2>Skills I Learned</h2>
+              <ul class="detail-list">
+                <li>ROS2 package design and node-based robotics software.</li>
+                <li>PID tuning and differential-drive kinematics.</li>
+                <li>Camera-based line detection and robotics debugging workflows.</li>
+                <li>Telemetry dashboards for real-time robot visualization.</li>
+              </ul>
+            </section>
+            <section class="detail-card">
+              <h2>Photos</h2>
+              <div class="photo-grid">
+                <figure>
+                  <img src="oscilloscope_to_troubleshootencoder.JPG" alt="oscilloscope used to troubleshoot encoder" height="450">
+                  <figcaption>Using an oscilloscope to troubleshoot the encoder.</figcaption>
+                </figure>
+                <figure>
+                  <video height="450" controls>
+                    <source src="First_Lab_PID_Tuning.MOV" type="video/mp4">
+                  </video>
+                  <figcaption>Early PID tuning during lab testing.</figcaption>
+                </figure>
+                <figure>
+                  <video height="450" controls>
+                    <source src="line_following_robot_test.mov" type="video/mp4">
+                  </video>
+                  <figcaption>Line-following robot test run.</figcaption>
+                </figure>
+              </div>
+            </section>
           </div>
-          <div class="about left">
-            <p class="about__desc left">
-              <h5>My responsibilities</h5>
-              <li>Developed a robot with Python and ROS2 on Libre Computer, integrating a camera for line detection and motor encoders for differential-drive kinematic modeling</li>
-              <li>Implemented a ROS2 package with nodes for image segmentation, motor commands, and a PID controller, publishing velocity commands and tracking error signals</li>
-              <li>Developed rqt and dashboard interfaces to visualize heading, linear speed, and angular speed</li>
-            </p>
-          </div>
-          <!-- Placeholder image removed until a real line-following robot photo is added.
-          <div class="about center">
-            <img src="../Project Photo/ProjectTempBox.png" alt="line follower robot placeholder" width="620" height="360">
-            <p class="about__desc">Temporary project image placeholder for the line follower robot</p>
-          </div>
-          -->
     </main>
     <footer class="footer">
     </footer>

@@ -40,48 +40,220 @@
             <h1 class="center">5 Smart & Connected Systems Projects</h1>
             <h4 class="about__role center">Fall 2024</h4>
           </div>
-          <div class="about left">
-            <p class="left">
-              This page groups five Smart and Connected Systems projects completed in Fall 2024, all centered on embedded firmware, networking, sensing, and cyber-physical systems.
-            </p>
-            <p class="left">
-              The project set included Indoor Robot Navigation, E-Voting with Distributed Systems, FitCat, Smart Cat Collar, and Smart Pill.
-            </p>
-            <p class="left">
-              Together these projects emphasized RTOS-based firmware, ESP32 development, Node.js backends, sensors, networking, and real-time system behavior.
-            </p>
+          <div class="project-detail">
+            <section class="detail-card">
+              <h2>Project Description</h2>
+              <p>This page groups my Smart and Connected Systems projects from Fall 2024. These projects were all built around embedded firmware, networking, sensing, and distributed cyber-physical systems, and together they gave me a strong foundation in ESP32 development, RTOS design, Node.js integration, and real-time system behavior.</p>
+              <p>This class has sparked my interest in the intersection of hardware and software in modern embedded systems and has shown me how software can extend beyond the computer screen to make a tangible impact on the physical world.</p>
+              <p>Since this course included several smaller builds instead of one single semester-long product, you can find each project below.</p>
+            </section>
+            <section class="detail-card">
+              <h2>Indoor Robot Navigation System</h2>
+              <h3>Project Description</h3>
+              <p>This project focused on indoor robot navigation using an ESP32-based robot platform. The system combined RTOS firmware, wireless remote control, obstacle avoidance, and external position tracking so the robot could be both manually controlled and guided through dynamic indoor spaces.</p>
+              <h3>My Responsibilities</h3>
+              <ul class="detail-list">
+                <li>Delivered C firmware for an ESP32 microcontroller with RTOS, control algorithms, feedback-based navigation, and wireless remote functionality.</li>
+                <li>Created wireless control for manual operation using WASD keyboard inputs.</li>
+                <li>Designed obstacle avoidance with ultrasonic and IR sensors and integrated Optitrack position tracking through a Node.js server over UDP.</li>
+              </ul>
+              <h3>Skills I Learned</h3>
+              <ul class="detail-list">
+                <li>Embedded control in C with an RTOS.</li>
+                <li>Sensor fusion for navigation and obstacle avoidance.</li>
+                <li>UDP-based communication between hardware and external software tools.</li>
+              </ul>
+              <h3>Project Links</h3>
+              <div class="detail-links">
+                <a href="https://youtu.be/Cs3NmwAqJ9Y">
+                  <span class="btn btn--outline">Presentation</span>
+                </a>
+                <a href="https://youtu.be/xad7kY3G9LY">
+                  <span class="btn btn--outline">Demo</span>
+                </a>
+              </div>
+              <h3>Photos</h3>
+              <div class="photo-grid">
+                <figure>
+                  <video height="450" controls>
+                    <source src="Robot_Test_Motion_Capture.MOV" type="video/mp4">
+                  </video>
+                  <figcaption>Indoor robot testing with motion capture.</figcaption>
+                </figure>
+              </div>
+
+              <h3>Indoor Robot Navigation Dashboard</h3>
+              <h3>Project Description</h3>
+              <p>To support the navigation project, I also built a dashboard layer for visualizing robot behavior. This subproject focused on showing paths, waypoints, and motion data in a way that made testing and debugging much easier.</p>
+              <h3>My Responsibilities</h3>
+              <ul class="detail-list">
+                <li>Built a 2D visualization of robot paths and waypoints using Streamlit and TingoDB.</li>
+                <li>Connected the dashboard to live robot state data for clearer monitoring during experiments.</li>
+              </ul>
+              <h3>Skills I Learned</h3>
+              <ul class="detail-list">
+                <li>Visualization design for robotics debugging.</li>
+                <li>Using lightweight databases and dashboards for hardware projects.</li>
+              </ul>
+              <h3>Project Links</h3>
+              <p>No video for this dashboard project.</p>
+              <h3>Photos</h3>
+              <div class="photo-grid">
+                <figure>
+                  <img src="robot_dashboard.png" alt="indoor robot dashboard" width="700" height="380">
+                  <figcaption>Indoor robot dashboard view.</figcaption>
+                </figure>
+              </div>
+            </section>
+            <section class="detail-card">
+              <h2>E-Voting System with Distributed Systems</h2>
+              <h3>Project Description</h3>
+              <p>This project explored distributed system behavior through an electronic voting system that used NFC-enabled fobs and IR communication for vote transmission. The design emphasized resilience by handling coordinator failure and preserving system continuity.</p>
+              <h3>My Responsibilities</h3>
+              <ul class="detail-list">
+                <li>Designed an electronic voting system using NFC-enabled fob devices and IR communication.</li>
+                <li>Implemented the Bully algorithm for coordinator election.</li>
+                <li>Developed a Node.js server on Raspberry Pi for vote logging, tabulation, and web visualization.</li>
+              </ul>
+              <h3>Skills I Learned</h3>
+              <ul class="detail-list">
+                <li>Distributed systems concepts such as leader election and resilience.</li>
+                <li>Embedded-to-server communication design.</li>
+                <li>Building visualization tools for networked systems.</li>
+              </ul>
+              <h3>Project Links</h3>
+              <div class="detail-links">
+                <a href="https://youtu.be/MBqvb3oTLFw">
+                  <span class="btn btn--outline">Presentation</span>
+                </a>
+                <a href="https://youtube.com/shorts/WIq_jFthad4">
+                  <span class="btn btn--outline">Demo</span>
+                </a>
+              </div>
+              <h3>Photos</h3>
+              <div class="photo-grid">
+                <figure>
+                  <img src="evoting_testing.png" alt="e-voting system testing" width="700" height="380">
+                  <figcaption>E-voting system testing.</figcaption>
+                </figure>
+                <figure>
+                  <img src="evoting_dashboard.png" alt="e-voting dashboard" width="700" height="380">
+                  <figcaption>E-voting dashboard and visualization.</figcaption>
+                </figure>
+              </div>
+            </section>
+            <section class="detail-card">
+              <h2>FitCat</h2>
+              <h3>Project Description</h3>
+              <p>FitCat was a networked activity tracking and leaderboard system designed around multiple ESP32 cat trackers communicating with a central server. The project combined IoT devices, a Raspberry Pi web portal, live charts, and status feedback to create a playful but technically rich distributed system.</p>
+              <h3>My Responsibilities</h3>
+              <ul class="detail-list">
+                <li>Designed a distributed system of multiple ESP32 cat trackers transmitting data over Wi-Fi to a central server.</li>
+                <li>Developed a Node.js web portal on Raspberry Pi with live-updating leaderboards, Canvas.js charts, and tracker status updates.</li>
+                <li>Configured a webcam feed in the portal and set up static IPs, port forwarding, and DDNS for reliable networking.</li>
+              </ul>
+              <h3>Skills I Learned</h3>
+              <ul class="detail-list">
+                <li>IoT networking across local and remote environments.</li>
+                <li>Node.js web dashboards for embedded systems.</li>
+                <li>Practical deployment issues like static IPs, DDNS, and port forwarding.</li>
+              </ul>
+              <h3>Project Links</h3>
+              <div class="detail-links">
+                <a href="https://youtu.be/zyfhC39LG-A">
+                  <span class="btn btn--outline">Presentation</span>
+                </a>
+                <a href="https://youtu.be/eBeoJkPhDso">
+                  <span class="btn btn--outline">Demo</span>
+                </a>
+              </div>
+              <h3>Photos</h3>
+              <div class="photo-grid">
+                <figure>
+                  <img src="fitcat.png" alt="FitCat tracker system" width="700" height="380">
+                  <figcaption>FitCat tracker setup.</figcaption>
+                </figure>
+                <figure>
+                  <img src="fitcat_dashboard.JPG" alt="FitCat dashboard" width="700" height="380">
+                  <figcaption>FitCat leaderboard and dashboard.</figcaption>
+                </figure>
+              </div>
+            </section>
+            <section class="detail-card">
+              <h2>Smart Cat Collar</h2>
+              <h3>Project Description</h3>
+              <p>Smart Cat Collar was a wearable biometrics tracking project built with an accelerometer and ESP32. The goal was to classify cat activity in real time, show useful information directly on the device, and stream data for visualization.</p>
+              <h3>My Responsibilities</h3>
+              <ul class="detail-list">
+                <li>Designed the wearable device to classify cat activity states and durations while displaying the cat's name, current activity, and elapsed time.</li>
+                <li>Programmed real-time serial data transmission for time, temperature, and activity visualization in Canvas.js charts.</li>
+                <li>Integrated I2C sensor communication, button-triggered displays, and buzzer functionality.</li>
+              </ul>
+              <h3>Skills I Learned</h3>
+              <ul class="detail-list">
+                <li>Wearable embedded system design.</li>
+                <li>Activity classification from sensor data.</li>
+                <li>Serial data pipelines between ESP32 hardware and visualization tools.</li>
+              </ul>
+              <h3>Project Links</h3>
+              <div class="detail-links">
+                <a href="https://youtu.be/bergQ_htIso">
+                  <span class="btn btn--outline">Presentation</span>
+                </a>
+                <a href="https://youtu.be/2b3N2CbFZuE">
+                  <span class="btn btn--outline">Demo</span>
+                </a>
+              </div>
+              <h3>Photos</h3>
+              <div class="photo-grid">
+                <figure>
+                  <img src="smart_cat_collar.png" alt="smart cat collar device" width="700" height="380">
+                  <figcaption>Smart Cat Collar device.</figcaption>
+                </figure>
+                <figure>
+                  <img src="smart_cat_collar_dashboard.png" alt="smart cat collar dashboard" width="700" height="380">
+                  <figcaption>Smart Cat Collar dashboard.</figcaption>
+                </figure>
+              </div>
+            </section>
+            <section class="detail-card">
+              <h2>Smart Pill</h2>
+              <h3>Project Description</h3>
+              <p>Smart Pill was an ingestible medical sensor project built around an ESP32-based diagnostic pill concept. The system was designed to measure multiple sensor values, report them periodically, and present the data in engineering units over a serial interface.</p>
+              <h3>My Responsibilities</h3>
+              <ul class="detail-list">
+                <li>Developed an embedded system using ESP32 for a diagnostic pill to read, log, and display sensor data in real time.</li>
+                <li>Implemented periodic two-second cycles to measure and report temperature, light levels, battery voltage, and tilt.</li>
+                <li>Designed the real-time functionality using an RTOS, hardware interfaces, a voltage divider, and I/O interrupts.</li>
+              </ul>
+              <h3>Skills I Learned</h3>
+              <ul class="detail-list">
+                <li>RTOS-based embedded firmware design.</li>
+                <li>Sensor interfacing and engineering unit conversion.</li>
+                <li>Real-time diagnostics and serial reporting.</li>
+              </ul>
+              <h3>Project Links</h3>
+              <div class="detail-links">
+                <a href="https://www.youtube.com/watch?v=wW85rFG0jRQ">
+                  <span class="btn btn--outline">Presentation</span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=GyBxElQSUrc">
+                  <span class="btn btn--outline">Demo</span>
+                </a>
+              </div>
+              <h3>Photos</h3>
+              <div class="photo-grid">
+                <figure>
+                  <img src="Smart_pill.png" alt="smart pill project" width="700" height="380">
+                  <figcaption>Smart Pill project image.</figcaption>
+                </figure>
+                <figure>
+                  <img src="group.JPG" alt="smart and connected systems group" height="380">
+                  <figcaption>Team photo from the Smart and Connected Systems course.</figcaption>
+                </figure>
+              </div>
+            </section>
           </div>
-          <div class="about left">
-            <p class="about__desc left">
-              <h5>Indoor Robot Navigation System Development</h5>
-              <li>Delivered C firmware for an ESP32 microcontroller with RTOS, control algorithms, feedback-based navigation, and wireless remote functionality</li>
-              <li>Created wireless control for manual operation using WASD keyboard inputs</li>
-              <li>Designed obstacle avoidance using ultrasonic and IR sensors, integrating Optitrack position tracking via a Node.js server over UDP</li>
-              <li>Built a 2D visualization of robot paths and waypoints using Streamlit and TingoDB</li>
-              <h5>E-Voting System with Distributed Systems</h5>
-              <li>Designed an electronic voting system using NFC-enabled fob devices and IR communication for vote transmission</li>
-              <li>Implemented a Bully algorithm for coordinator election to ensure resilience and continuity</li>
-              <li>Developed a Node.js server for vote logging, tabulation, and web visualization on Raspberry Pi</li>
-              <h5>FitCat</h5>
-              <li>Designed a distributed system of multiple ESP32 cat trackers to transmit data over WiFi to a central server</li>
-              <li>Developed a Node.js-based web portal on Raspberry Pi with live leaderboards, Canvas.js charts, and status updates sent back to trackers</li>
-              <li>Configured a webcam feed into the web portal and established robust networking with static IPs, port forwarding, and DDNS</li>
-              <h5>Smart Cat Collar</h5>
-              <li>Designed a wearable device using an accelerometer and ESP32 to classify cat activity states and durations while displaying current activity and elapsed time</li>
-              <li>Programmed real-time serial data transmission for time, temperature, and activity visualization in Canvas.js charts</li>
-              <li>Integrated I2C communication, button-triggered displays, and buzzer functionality</li>
-              <h5>Smart Pill</h5>
-              <li>Developed an embedded system using ESP32 for a diagnostic pill to read, log, and display sensor data in real time</li>
-              <li>Implemented periodic cycles to measure and report temperature, light levels, battery voltage, and tilt in engineering units over a serial interface</li>
-              <li>Designed real-time functionality using an RTOS, hardware interfaces, a voltage divider, and I/O interrupts</li>
-            </p>
-          </div>
-          <!-- Placeholder image removed until project-specific photos are added.
-          <div class="about center">
-            <img src="../Project Photo/ProjectTempBox.png" alt="smart connected systems placeholder" width="620" height="360">
-            <p class="about__desc">Temporary project image placeholder for the smart and connected systems projects</p>
-          </div>
-          -->
     </main>
     <footer class="footer">
     </footer>

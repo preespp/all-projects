@@ -41,35 +41,56 @@
             <h1 class="center">and Traffic Light Application</h1>
             <h4 class="about__role center">Embedded Systems Project</h4>
           </div>
-          <div class="about left">
-            <p class="left">
-              This project focused on building a custom Linux environment for the BeagleBone Black ARMv7 platform while also implementing and testing kernel-level interaction on real hardware.
-            </p>
-            <p class="left">
-              The work included compiling the Linux kernel, configuring BusyBox, using QEMU for emulation, and developing Linux kernel modules for timers, monitoring, signaling, and GPIO-based I/O.
-            </p>
-            <p class="left">
-              I also collaborated in a two-person team to implement and test a kernel-level traffic light control system on real BeagleBone hardware.
-            </p>
+          <div class="project-detail">
+            <section class="detail-card">
+              <h2>Project Description</h2>
+              <p>This project focused on building a custom embedded Linux environment for the BeagleBone Black while also implementing kernel-level functionality on real hardware. The work covered both system bring-up and low-level programming, from kernel compilation and BusyBox configuration to GPIO control and interrupt-driven behavior.</p>
+              <p>In parallel, I collaborated on a kernel-level traffic light application that ran on actual hardware. The project gave me a much deeper understanding of how operating systems concepts connect to real embedded devices and real-time hardware interaction.</p>
+            </section>
+            <section class="detail-card">
+              <h2>My Responsibilities</h2>
+              <ul class="detail-list">
+                <li>Built a custom Linux distribution for the BeagleBone Black, including Linux kernel compilation, BusyBox configuration, and QEMU emulation.</li>
+                <li>Developed Linux kernel modules for timers, asynchronous notifications, and a <code>/proc</code> interface for userspace monitoring and signaling.</li>
+                <li>Programmed real-time GPIO interaction for LEDs and pushbuttons using interrupt-driven kernelspace design.</li>
+                <li>Collaborated in a two-person team to implement and test a kernel-level traffic light control system on real hardware.</li>
+              </ul>
+            </section>
+            <section class="detail-card">
+              <h2>Skills I Learned</h2>
+              <ul class="detail-list">
+                <li>Embedded Linux bring-up, cross-compilation, and kernel debugging.</li>
+                <li>Kernel module development and low-level device interaction.</li>
+                <li>Interrupt-driven programming and real-time hardware control.</li>
+                <li>Serial communication and embedded toolchain workflows.</li>
+              </ul>
+            </section>
+            <section class="detail-card">
+              <h2>Project Links</h2>
+              <div class="detail-links">
+                <a href="https://github.com/preespp/Embedded-Systems-Lab-HW">
+                  <span class="btn btn--outline">GitHub</span>
+                </a>
+              </div>
+            </section>
+            <section class="detail-card">
+              <h2>Photos</h2>
+              <div class="photo-grid">
+                <figure>
+                  <video height="450" controls>
+                    <source src="TrafficLight.MOV" type="video/mp4">
+                  </video>
+                  <figcaption>Traffic light application running on hardware.</figcaption>
+                </figure>
+                <figure>
+                  <video height="450" controls>
+                    <source src="test_runtime_performance.MOV" type="video/mp4">
+                  </video>
+                  <figcaption>Runtime performance testing.</figcaption>
+                </figure>
+              </div>
+            </section>
           </div>
-          <div class="about left">
-            <p class="about__desc left">
-              <h5>My responsibilities</h5>
-              <li>Built a custom Linux distribution for the BeagleBone Black, including compiling the Linux kernel, configuring BusyBox, and emulating using QEMU</li>
-              <li>Developed multiple Linux kernel modules, including timer management with user-configurable expiration, asynchronous notifications, and a /proc interface for monitoring and signaling userspace processes</li>
-              <li>Programmed real-time I/O interaction in kernelspace by controlling LEDs and pushbuttons through GPIO on actual BeagleBone hardware using interrupt-driven design</li>
-              <li>Gained hands-on experience with cross-compilation, device drivers, kernel debugging, serial communication, and embedded Linux toolchains</li>
-              <li>Collaborated in a two-person team to implement and test a kernel-level traffic light control system on real hardware</li>
-            </p>
-          </div>
-          <div class="about center">
-            <div class="about__contact">
-              <a href="https://github.com/preespp/Embedded-Systems-Lab-HW">
-                <span class="btn btn--outline">GitHub</span>
-              </a>
-            </div>
-          </div>
-          <!-- No project-specific local image available yet for this page. -->
     </main>
     <footer class="footer">
     </footer>

@@ -41,38 +41,100 @@
             <h1 class="center">Grocery Operational Fulfillment Robot</h1>
             <h4 class="about__role center">Senior Design Project, Sep 2025 - May 2026</h4>
           </div>
-          <div class="about left">
-            <p class="left">
-              GOFR is a MechE x ECE Senior Design 2025-26 student self-defined project and a SICK $10K Challenge 2025-26 finalist. The project focuses on building an autonomous robot to assist with employee stocking and customer shopping in a grocery store.
-            </p>
-            <p class="left">
-              The robot combines a functional robotic arm, sensors, cameras, and AI to support navigation, perception, manipulation, and task execution in a grocery environment.
-            </p>
-            <p class="left">
-              I worked in a team of 6 and contributed across software architecture, robotics autonomy, backend integration, and system-level hardware and sensing integration.
-            </p>
-          </div>
-          <div class="about left">
-            <p class="about__desc left">
-              <h5>My responsibilities</h5>
-              <li>Developed an autonomous robot with a functional robotic arm, sensors, cameras, and AI to assist in employee stocking and customer shopping in a grocery store</li>
-              <li>Designed system architecture and Behavior Tree-driven task management for high-level autonomy, coordinating navigation, perception, manipulation, and recovery behaviors via ROS2 services and actions</li>
-              <li>Performed system integration across perception, sensor, and actuator modules, including real-time collision detection using ultrasonic sensor data over I2C and UART with ESP32 and closed-loop control of the robotic arm</li>
-              <li>Developed Node.js REST APIs for online order submission to robotic task execution</li>
-              <li>Configured Firebase for inventory report and user database</li>
-              <li>Led Agile development using Jira and GitHub with prototyping, design, and system integration in a team of 6</li>
-            </p>
-          </div>
-          <div class="about center">
-            <div class="about__contact">
-              <a href="https://github.com/preespp/EC463_Team_21_Grocery_Robot">
-                <span class="btn btn--outline">GitHub</span>
-              </a>
-            </div>
-          </div>
-          <div class="about center">
-            <img src="gofr.png" alt="GOFR project" width="700" height="380">
-            <p class="about__desc">GOFR project preview</p>
+          <div class="project-detail">
+            <section class="detail-card">
+              <h2>Project Description</h2>
+              <p>GOFR is a MechE x ECE senior design capstone project focused on building an autonomous grocery robot that can support both employee stocking and customer shopping. Our team developed a full robotic system with a mobile base, robotic arm, sensors, cameras, and AI-assisted software so the robot could navigate store environments, identify tasks, and coordinate manipulation with high-level decision making.</p>
+              <p>What made this project especially exciting was that it combined robotics, embedded systems, full-stack software, and early commercialization thinking in one system. Beyond building the robot itself, we also designed an online ordering and store management platform, connected web-based orders to robotic task execution, and thought carefully about how the system could scale toward future multi-robot fleet management.</p>
+            </section>
+            <section class="detail-card">
+              <h2>My Responsibilities</h2>
+              <ul class="detail-list">
+                <li>Designed the system architecture and Behavior Tree driven task management for high-level autonomy across navigation, perception, manipulation, and recovery behaviors in ROS2.</li>
+                <li>Performed system integration across perception, sensor, and actuator modules, including real-time collision detection using ultrasonic sensor data over I2C with ESP32.</li>
+                <li>Designed the ultrasonic sensor holder and ESP32 holder as part of the robot hardware integration.</li>
+                <li>Developed open-loop control and hand-eye calibration for the ViperX 300S robotic arm in MoveIt2 and RViz.</li>
+                <li>Designed and developed a full-stack online ordering and store management application in Vue.js with Gemini API integration for assistive features and multilingual support.</li>
+                <li>Architected the application to be extensible for future multi-robot fleet management integration.</li>
+                <li>Designed a PostgreSQL database to manage and efficiently query product inventory across applications.</li>
+                <li>Developed Node.js REST APIs to connect online grocery orders to robotic task execution.</li>
+                <li>Led Agile development with Jira and GitHub while coordinating prototyping, design, and integration in a team of six.</li>
+                <li>Performed market research and developed an initial-stage commercialization revenue model.</li>
+                <li>Prepared scripts and edited promotional videos for the project.</li>
+              </ul>
+            </section>
+            <section class="detail-card">
+              <h2>Skills I Learned</h2>
+              <ul class="detail-list">
+                <li>System architecture for robotics projects that span perception, planning, manipulation, embedded sensing, and web applications.</li>
+                <li>Behavior Tree design, ROS2 services and actions, and cross-module robotics integration.</li>
+                <li>Robotic arm calibration, MoveIt2 workflows, and practical hand-eye coordination setup.</li>
+                <li>Full-stack application design with Vue.js, Node.js, PostgreSQL, and LLM-assisted features.</li>
+                <li>Agile teamwork, technical leadership, and commercialization-minded engineering.</li>
+              </ul>
+            </section>
+            <section class="detail-card">
+              <h2>Awards</h2>
+              <ul class="detail-list">
+                <li>SICK $10K 2025-26 Challenge finalist.</li>
+                <li>Accepted to the Capstone Design Conference 2026 at Texas A&amp;M University.</li>
+              </ul>
+            </section>
+            <section class="detail-card">
+              <h2>Project Links</h2>
+              <div class="detail-links">
+                <a href="https://github.com/preespp/EC463_Team_21_Grocery_Robot">
+                  <span class="btn btn--outline">GitHub</span>
+                </a>
+                <a href="https://sites.google.com/tamu.edu/capstone26/home">
+                  <span class="btn btn--outline">Conference Website</span>
+                </a>
+                <a href="BU_GOFR_Grocery_Operations_Fulfillment_Robot.pdf">
+                  <span class="btn btn--outline">Project PDF</span>
+                </a>
+              </div>
+            </section>
+            <section class="detail-card">
+              <h2>Photos</h2>
+              <div class="photo-grid">
+                <figure>
+                  <img src="gofr.png" alt="GOFR project" width="700" height="380">
+                  <figcaption>GOFR project preview.</figcaption>
+                </figure>
+                <figure>
+                  <img src="prototype.JPG" alt="GOFR prototype" height="450">
+                  <figcaption>Early GOFR prototype.</figcaption>
+                </figure>
+                <figure>
+                  <img src="testing_system_integration.JPG" alt="GOFR system integration testing" height="450">
+                  <figcaption>Testing full system integration.</figcaption>
+                </figure>
+                <figure>
+                  <img src="touchscreen_app_testing.JPG" alt="GOFR touchscreen app testing" height="450">
+                  <figcaption>Testing the touchscreen ordering application.</figcaption>
+                </figure>
+                <figure>
+                  <img src="ultrasonic_teststand.JPG" alt="GOFR ultrasonic test stand" height="450">
+                  <figcaption>Ultrasonic sensing test stand.</figcaption>
+                </figure>
+                <figure>
+                  <img src="Open_Loop_With_Moveit2.JPG" alt="GOFR MoveIt2 open loop control" height="450">
+                  <figcaption>Open-loop robotic arm control in MoveIt2.</figcaption>
+                </figure>
+                <figure>
+                  <img src="Made_error_in_gazebo.JPG" alt="GOFR gazebo testing" height="450">
+                  <figcaption>Gazebo testing during development.</figcaption>
+                </figure>
+                <figure>
+                  <img src="QAQCJetson.JPG" alt="GOFR Jetson QAQC" height="450">
+                  <figcaption>Jetson QA and QC work.</figcaption>
+                </figure>
+                <figure>
+                  <img src="premier_pro_editing.JPG" alt="GOFR promotional video editing" height="450">
+                  <figcaption>Editing promotional video materials.</figcaption>
+                </figure>
+              </div>
+            </section>
           </div>
     </main>
     <footer class="footer">

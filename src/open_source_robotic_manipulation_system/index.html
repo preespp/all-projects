@@ -40,39 +40,83 @@
             <h1 class="center">Open Source Robotic Manipulation System</h1>
             <h4 class="about__role center">Spring 2025</h4>
           </div>
-          <div class="about left">
-            <p class="left">
-              This project developed a low-cost robotic manipulation system that combines real-time object detection, multi-camera perception, and LeRobot-controlled 6-DOF arms.
-            </p>
-            <p class="left">
-              It integrated YOLOv8, embedded vision streaming, dataset collection, behavior cloning, and mechanical integration to build an end-to-end manipulation platform.
-            </p>
-            <p class="left">
-              This work was accepted to the National Collegiate Research Conference (NCRC) 2026 and presented as a poster at Harvard University.
-            </p>
-          </div>
-          <div class="about left">
-            <p class="about__desc left">
-              <h5>My responsibilities</h5>
-              <li>Developed a low-cost robotic manipulation system integrating real-time object detection with multi-camera visual input and LeRobot-controlled 6-DOF arms</li>
-              <li>Accepted to National Collegiate Research Conference (NCRC) 2026 and presented a poster at Harvard University</li>
-              <li>Designed and implemented an embedded vision pipeline using the Seeed Studio XIAO ESP32S3 Sense module to stream MJPEG video over Wi-Fi for remote inference</li>
-              <li>Built datasets by aligning robot joint states with image frames and bounding boxes to train manipulation policies</li>
-              <li>Trained and deployed behavior cloning models including Diffusion Policy and Action Chunking Transformer with YOLO-based feature augmentation, achieving 50% one-shot success rates in Isaac Sim</li>
-              <li>Designed 3D-printed mounts and mechanical integration for the ESP32 camera system and UVC cameras</li>
-              <li>Contributed to firmware development in ESP-IDF, system calibration, and real-time control synchronization</li>
-            </p>
-          </div>
-          <div class="about center">
-            <div class="about__contact">
-              <a href="https://github.com/preespp/augment-robot-arm-yolo-vla">
-                <span class="btn btn--outline">GitHub</span>
-              </a>
-            </div>
-          </div>
-          <div class="about center">
-            <img src="ncrc.png" alt="robotic manipulation system project" width="700" height="380">
-            <p class="about__desc">Robotics Arm Manipulation System project image used for the NCRC 2026 submission</p>
+          <div class="project-detail">
+            <section class="detail-card">
+              <h2>Project Description</h2>
+              <p>This project developed a low-cost robotic manipulation system that combined real-time object detection, multi-camera vision, and LeRobot-controlled 6-DOF robot arms. The goal was to build an end-to-end platform that could observe a scene, collect synchronized training data, and use learned policies for manipulation.</p>
+              <p>The system brought together embedded vision streaming, dataset generation, policy learning, and mechanical integration. I enjoyed this project because it connected robotics, embedded systems, and machine learning in a way that felt both research-driven and deeply hands-on.</p>
+            </section>
+            <section class="detail-card">
+              <h2>My Responsibilities</h2>
+              <ul class="detail-list">
+                <li>Built the manipulation platform using YOLOv8, multi-camera input, and LeRobot-controlled 6-DOF arms.</li>
+                <li>Designed an embedded vision pipeline with the Seeed Studio XIAO ESP32S3 Sense module to stream MJPEG video over Wi-Fi for remote inference.</li>
+                <li>Built datasets by aligning robot joint states with images and bounding boxes for policy training.</li>
+                <li>Trained and deployed behavior cloning models including Diffusion Policy and Action Chunking Transformer with YOLO-based feature augmentation.</li>
+                <li>Designed 3D-printed camera mounts and contributed to ESP-IDF firmware, calibration, and real-time synchronization.</li>
+              </ul>
+            </section>
+            <section class="detail-card">
+              <h2>Skills I Learned</h2>
+              <ul class="detail-list">
+                <li>Embedded vision streaming and remote inference pipelines.</li>
+                <li>Robot learning workflows, dataset alignment, and behavior cloning.</li>
+                <li>Mechanical integration for perception hardware.</li>
+                <li>Calibration and synchronization in multi-sensor robotic systems.</li>
+              </ul>
+            </section>
+            <section class="detail-card">
+              <h2>Awards</h2>
+              <ul class="detail-list">
+                <li>Accepted to the National Collegiate Research Conference 2026.</li>
+                <li>Presented as a poster at Harvard University.</li>
+              </ul>
+            </section>
+            <section class="detail-card">
+              <h2>Project Links</h2>
+              <div class="detail-links">
+                <a href="https://github.com/preespp/augment-robot-arm-yolo-vla">
+                  <span class="btn btn--outline">GitHub</span>
+                </a>
+                <a href="https://canva.link/8pwcdyylcatozlj">
+                  <span class="btn btn--outline">Presentation Slide</span>
+                </a>
+                <a href="https://hurainfo.org/about-ncrc">
+                  <span class="btn btn--outline">NCRC Website</span>
+                </a>
+              </div>
+            </section>
+            <section class="detail-card">
+              <h2>Photos</h2>
+              <div class="photo-grid">
+                <figure>
+                  <img src="ncrc.png" alt="robotic manipulation system project" width="700" height="380">
+                  <figcaption>Poster image used for the NCRC 2026 submission.</figcaption>
+                </figure>
+                <figure>
+                  <img src="poster.png" alt="robotic manipulation system poster" width="700" height="380">
+                  <figcaption>Research poster.</figcaption>
+                </figure>
+                <figure>
+                  <img src="LeRobot.JPG" alt="LeRobot manipulation setup" height="450">
+                  <figcaption>LeRobot manipulation setup.</figcaption>
+                </figure>
+                <figure>
+                  <img src="ComputerVision.JPG" alt="computer vision setup for manipulation" height="450">
+                  <figcaption>Computer vision setup for the manipulation system.</figcaption>
+                </figure>
+                <figure>
+                  <img src="test_setup.JPG" alt="robotic manipulation test setup" height="450">
+                  <figcaption>Test setup during data collection and experiments.</figcaption>
+                </figure>
+                <figure>
+                  <video height="450" controls>
+                    <source src="IssacSimTrainin.MOV" type="video/mp4">
+                  </video>
+                  <figcaption>Isaac Sim training and evaluation clip.</figcaption>
+                </figure>
+              </div>
+            </section>
           </div>
     </main>
     <footer class="footer">
