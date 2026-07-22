@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
+    <title>All Projects | Pree Simphliphan — Robotics &amp; Embedded Systems</title>
+    <meta name="description" content="Robotics, embedded systems, and AI projects by Pree Simphliphan — autonomous robots, robot learning, control systems, firmware, FPGA, and full-stack systems from Boston University and beyond." />
+    <link rel="canonical" href="https://preespp.github.io/all-projects/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://preespp.github.io/all-projects/" />
+    <meta property="og:title" content="All Projects | Pree Simphliphan — Robotics &amp; Embedded Systems" />
+    <meta property="og:description" content="Robotics, embedded systems, and AI projects by Pree Simphliphan — autonomous robots, robot learning, control systems, firmware, FPGA, and full-stack systems." />
+    <meta property="og:image" content="https://preespp.github.io/all-projects/src/gofr/gofr.png" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,7 +19,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Pree Simphliphan</title>
   </head>
   <body class="light" id="top">
     <header class="header center">
@@ -38,17 +45,66 @@
 
     <main>
       <section class="section projects">
-        <h2 class="section__title">Outside Class Projects</h2>
+        <h2 class="section__title">Highlighted Projects</h2>
         <div class="stacked-slider-wrapper">
-          <button class="slider-btn left" onclick="slideProjects('slider1', -1)">&#10094;</button>
-      
-          <div class="stacked-slider" id="slider1">
+          <button class="slider-btn left" onclick="slideProjects('slider0', -1)">&#10094;</button>
+
+          <div class="stacked-slider" id="slider0">
+            <div class="card" style="background-image: url('src/')">
+              <div class="card-content">
+                <h3>SICK $10K Challenge 2025-26 Finalist: GOFR Grocery Operational Fulfillment Robot</h3>
+                <p class="project__description">
+                  An autonomous grocery-assistance robot that combines AI, perception, and robotic manipulation to support store restocking and customer shopping.
+                  Student-proposed senior design project and SICK $10K Challenge 2025-26 finalist.
+                  Accepted to the Capstone Design Conference 2026 in College Station, Texas (June 2026).
+                </p>
+                <ul class="project__stack">
+                  <li class="project__stack-item">ROS2</li>
+                  <li class="project__stack-item">AI</li>
+                  <li class="project__stack-item">Robotics</li>
+                  <li class="project__stack-item">Embedded Systems</li>
+                  <li class="project__stack-item">Full-Stack</li>
+                  <li class="project__stack-item">Project Management</li>
+                  <li class="project__stack-item">Entrepreneurship</li>
+                </ul>
+                <a
+                  href="src/gofr/index.html"
+                  aria-label="live preview"
+                  class="link link--icon"
+                >
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
+              </div>
+            </div>
+            <div class="card" style="background-image: url('src/')">
+              <div class="card-content">
+                <h3>NCRC 2026 at Harvard University: Open Source Robotic Manipulation System</h3>
+                <p class="project__description">
+                  An open-source, low-cost robotic manipulation system integrating real-time object detection (YOLOv8) with multi-camera visual input,
+                  Vision-Language-Action policies, and LeRobot-controlled 6-DOF arms from Hugging Face. Presented at the National Collegiate Research Conference (NCRC) 2026, Harvard University.
+                </p>
+                <ul class="project__stack">
+                  <li class="project__stack-item">Robot Learning</li>
+                  <li class="project__stack-item">Computer Vision</li>
+                  <li class="project__stack-item">Python</li>
+                  <li class="project__stack-item">Robotics</li>
+                  <li class="project__stack-item">Embedded Systems</li>
+                </ul>
+                <a
+                  href="src/open_source_robotic_manipulation_system/index.html"
+                  aria-label="live preview"
+                  class="link link--icon"
+                >
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
+              </div>
+            </div>
             <div class="card" style="background-image: url('src/')">
               <div class="card-content">
                 <h3>MakeMIT x Harvard 2026: ALICE AI Life Improvement & Care Expert</h3>
                 <p class="project__description">
-                  A local-first AI smart pill dispenser designed to help people manage multiple medications safely at home. ALICE combines face recognition,
-                  guided dispensing, and contextual health support in a more private and practical home-care device.
+                  A local-first AI smart pill dispenser that helps people manage multiple medications safely at home — built in one hackathon weekend. ALICE combines face recognition,
+                  guided dispensing, and contextual health support in a private, practical home-care device.
                 </p>
                 <ul class="project__stack">
                   <li class="project__stack-item">AI</li>
@@ -68,11 +124,45 @@
             </div>
             <div class="card" style="background-image: url('src/')">
               <div class="card-content">
+                <h3>University Rover Challenge 2024-25: Mars Rover</h3>
+                <p class="project__description">
+                  Under the BU Mars Rover Club, we built a rover powered by an NVIDIA Jetson AGX Orin for the University Rover Challenge in Utah. I worked across the Electrical, Robotics, and Software subteams,
+                  serving as Electrical Deputy Lead in Fall 2024 and interim Electrical Lead in Spring 2025.
+                </p>
+                <ul class="project__stack">
+                  <li class="project__stack-item">ROS2</li>
+                  <li class="project__stack-item">Electrical</li>
+                  <li class="project__stack-item">Embedded Systems</li>
+                  <li class="project__stack-item">Robotics</li>
+                  <li class="project__stack-item">Python</li>
+                </ul>
+                <a
+                  href="src/bumrc/index.html"
+                  aria-label="live preview"
+                  class="link link--icon"
+                >
+                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider-btn right" onclick="slideProjects('slider0', 1)">&#10095;</button>
+        </div>
+      </section>
+
+      <section class="section projects">
+        <h2 class="section__title">Outside Class Projects</h2>
+        <div class="stacked-slider-wrapper">
+          <button class="slider-btn left" onclick="slideProjects('slider1', -1)">&#10094;</button>
+      
+          <div class="stacked-slider" id="slider1">
+            <div class="card" style="background-image: url('src/')">
+              <div class="card-content">
                 <h3>BU Robotics Hackathon 2025: Coin Collector Robot (1st place)</h3>
                 <p class="project__description">
-                  As team of 4, we tackled challenge in BU Robotics Hackathon 2025. We developed magnetic delivery mechanism to collect
-                  and transport small magnetic coins to the bin and score the most points to win 1st place in the competition with one round
-                  of sweeping the arena!
+                  As a team of four, we won 1st place at the BU Robotics Hackathon 2025. We developed a magnetic delivery mechanism that collected
+                  and transported magnetic coins to the bin — scoring the most points in a single sweep of the arena.
                 </p>
                 <ul class="project__stack">
                   <li class="project__stack-item">Robotics</li>
@@ -92,38 +182,9 @@
             </div>
             <div class="card" style="background-image: url('src/')">
               <div class="card-content">
-                <h3>University Rover Challenge 2024-25: Mars Rover</h3>
-                <p class="project__description">
-                  Projects under BU Mars Rover Club, we built to a rover powered by NVIDIA Jetson AGX Orin to University Rover Challenge in Utah. My tasks are under Electrical, Robotics and Software sub-teams.
-                  I am also Electrical Deputy Lead during Fall 2024 and interim ELectrical Lead during Spring 2025.
-                </p>
-                <ul class="project__stack">
-                  <li class="project__stack-item">Python</li>
-                  <li class="project__stack-item">C++</li>
-                  <li class="project__stack-item">Ubuntu</li>
-                  <li class="project__stack-item">Embedded Systems</li>
-                  <li class="project__stack-item">ROS2</li>
-                  <li class="project__stack-item">Motors</li>
-                  <li class="project__stack-item">GPS</li>
-                  <li class="project__stack-item">Electrical</li>
-                  <li class="project__stack-item">Robotics</li>
-                  <li class="project__stack-item">CAD</li>
-                  <li class="project__stack-item">Wireless Communication</li>
-                </ul>
-                <a
-                  href="src/bumrc/index.html"
-                  aria-label="live preview"
-                  class="link link--icon"
-                >
-                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
-                </a>
-              </div> 
-            </div>
-            <div class="card" style="background-image: url('src/')">
-              <div class="card-content">
                 <h3>AIAA Design/Build/Fly (DBF) 2024-25: Glider & Main Plane</h3>
                 <p class="project__description">
-                  Project under BU AIAA (Design/Build/Fly team), we built to a plane to DBF Competition 2025 (Arizona); I am part of Electronics & Propulsion System team
+                  Under BU AIAA, we built a competition aircraft for DBF 2025 in Arizona; I worked on the Electronics & Propulsion team.
                 </p>
                 <ul class="project__stack">
                   <li class="project__stack-item">KiCAD</li>
@@ -186,7 +247,7 @@
               <div class="card-content">
                 <h3>BU Hardware Hackathon 2023: Smart Fan (3rd place)</h3>
                 <p class="project__description">
-                  3rd place Hardware Hackathon 2023 as team of 2, Firmware Development for Medical Device that measures the user's heart rate and activate cool down system to reduce body`s stress
+                  3rd place at the BU Hardware Hackathon 2023 (team of two): firmware for a medical device that measures the user's heart rate and activates a cooling system to reduce the body's stress.
                 </p>
                 <ul class="project__stack">
                   <li class="project__stack-item">C++</li>
@@ -240,24 +301,20 @@
           <div class="stacked-slider" id="slider2">
             <div class="card" style="background-image: url('src/')">
               <div class="card-content">
-                <h3>SICK $10K Challenge 2025-26 Finalist: GOFR Grocery Operational Fulfillment Robot</h3>
+                <h3>Inverted Pendulum Stability Using Linear Motion</h3>
                 <p class="project__description">
-                  An autonomous grocery-assistance robot that combines AI, perception, and robotic manipulation to support store restocking and customer shopping.
-                  Student-proposed Senior design project and SICK $10K Challenge 2025-26 finalist.
-                  Accepted to Capstone Design Conference 2026 at College Station, Texas in June 2026.
+                  A Python simulation framework for stabilizing an inverted pendulum on a cart: PID stabilization and energy-based swing-up control
+                  over both linearized and nonlinear dynamics, with RK4 integration, real-time animation, and a prototype web interface for interactive tuning.
                 </p>
                 <ul class="project__stack">
-                  <li class="project__stack-item">ROS2</li>
-                  <li class="project__stack-item">AI</li>
-                  <li class="project__stack-item">Robotics</li>
-                  <li class="project__stack-item">Embedded Systems</li>
-                  <li class="project__stack-item">PostgreSQL</li>
-                  <li class="project__stack-item">Gemini API</li>
-                  <li class="project__stack-item">Node.js</li>
-                  <li class="project__stack-item">ESP32</li>
+                  <li class="project__stack-item">Control Systems</li>
+                  <li class="project__stack-item">Python</li>
+                  <li class="project__stack-item">PID</li>
+                  <li class="project__stack-item">Simulation</li>
+                  <li class="project__stack-item">NumPy</li>
                 </ul>
                 <a
-                  href="src/gofr/index.html"
+                  href="src/inverted_pendulum/index.html"
                   aria-label="live preview"
                   class="link link--icon"
                 >
@@ -326,31 +383,6 @@
           <div class="stacked-slider" id="slider3">
             <div class="card" style="background-image: url('src/')">
               <div class="card-content">
-                <h3>NCRC 2026 at Harvard University: Open Source Robotic Manipulation System</h3>
-                <p class="project__description"> 
-                  An open source for low-cost robotics manipulation system integrating real-time object detection (YOLOv8) with multi-camera visual input, 
-                  Vision-Language-Action Policies, and LeRobot-controlled 6-DOF arms from HuggingFace
-                </p>
-                <ul class="project__stack">
-                  <li class="project__stack-item">C</li>
-                  <li class="project__stack-item">Python</li>
-                  <li class="project__stack-item">Robotics</li>
-                  <li class="project__stack-item">Embedded Systems</li>
-                  <li class="project__stack-item">Computer Networking</li>
-                  <li class="project__stack-item">Computer Vision</li>
-                  <li class="project__stack-item">Git</li>
-                </ul>
-                <a
-                  href="src/open_source_robotic_manipulation_system/index.html"
-                  aria-label="live preview"
-                  class="link link--icon"
-                >
-                  <span aria-hidden="true" class="icon icon--badge">Read More</span>
-                </a>
-              </div>
-            </div>
-            <div class="card" style="background-image: url('src/')">
-              <div class="card-content">
                 <h3>Embedded Linux Systems Development and traffic light application</h3>
                 <p class="project__description">
                   A custom Linux distribution for the BeagleBone Black (ARMv7), including compiling the Linux kernel, configuring BusyBox, and emulating using QEMU, 
@@ -375,9 +407,8 @@
               <div class="card-content">
                 <h3>2-wheel line follower robot</h3>
                 <p class="project__description">
-                  Build personal 2 wheels robots for robotics class powered by Libre single board computer. Coding Python with ROS2 involved nodes and topics for 
-                  processing image from camera, building custom dashboard for robot, configuring motors, developing kinematics model, tuning PID controller and integrating all modules.
-                  and completing line follower robot.
+                  Built a two-wheel robot on a Libre single-board computer for my robotics class: ROS2 nodes and topics in Python for camera image processing,
+                  a custom dashboard, motor configuration, a kinematics model, and PID tuning — all integrated into a complete line-following robot.
                 </p>
                 <ul class="project__stack">
                   <li class="project__stack-item">Python</li>
@@ -460,8 +491,8 @@
               <div class="card-content">
                 <h3>Inventory Optimizer: Desktop Application</h3>
                 <p class="project__description">
-                  An inventory management tool to provide insight information with future prediction aimed to assist small retail businesses powered by 
-                  Nodejs, Electronjs, Python, HTML/CSS, Javascript, Mongodb
+                  An inventory management desktop app with demand forecasting, built to help small retail businesses — powered by
+                  Node.js, Electron.js, Python, HTML/CSS, JavaScript, and MongoDB.
                 </p>
                 <ul class="project__stack">
                   <li class="project__stack-item">Node.js</li>
@@ -485,8 +516,8 @@
               <div class="card-content">
                 <h3>Room Occupancy Monitor</h3>
                 <p class="project__description">
-                  A device to monitor number of people and actutate mechanical system to prevent more people from entering and exceeding the occupancy,
-                  using Engineering Design principle to provide innovative solutions involving housing design and firmware developement with IoT
+                  A device that monitors the number of people in a room and actuates a mechanical system to prevent more people from entering once occupancy is exceeded —
+                  applying engineering design principles across enclosure design and IoT firmware development.
                 </p>
                 <ul class="project__stack">
                   <li class="project__stack-item">C++</li>
@@ -508,7 +539,7 @@
               <div class="card-content">
                 <h3>MIPS Pipeline Processor Implementation</h3>
                 <p class="project__description">
-                  Digital Designed and implemented a 5-stage pipelined and single-cycle CPU in HDL and Optimized ALU operations within the pipeline
+                  Designed and implemented single-cycle and 5-stage pipelined MIPS CPUs in Verilog, optimizing ALU operations within the pipeline.
                 </p>
                 <ul class="project__stack">
                   <li class="project__stack-item">Verilog</li>
@@ -550,7 +581,7 @@
               <div class="card-content">            
                 <h3>Truss Design Optimizer</h3>
                 <p class="project__description">
-                  Designed and Fabricated the most effective and practical truss in terms of cost spending and weight load maximum from MATLAB calculation
+                  Designed and fabricated a truss optimized for cost and maximum load capacity, based on MATLAB structural calculations.
                 </p>
                 <ul class="project__stack">
                   <li class="project__stack-item">MATLAB</li>
@@ -603,9 +634,9 @@
             </div>
             <div class="card" style="background-image: url('src/')">
               <div class="card-content">            
-                <h3>Analysis of the Sustainability of the World`s Growing Population</h3>
+                <h3>Analysis of the Sustainability of the World's Growing Population</h3>
                 <p class="project__description">
-                  The project to analyze data on crop production and population growth to address current sustainability situations globally
+                  Analyzed crop production and population growth data to assess global sustainability trends.
                 </p>
                 <ul class="project__stack">
                   <li class="project__stack-item">MATLAB</li>
@@ -625,7 +656,7 @@
               <div class="card-content">            
                 <h3>ConnectFour Game</h3>
                 <p class="project__description">
-                  Game Development with Python both version with GUI and without GUI, my very first programming project in my life
+                  Connect Four in Python, in GUI (Pygame) and terminal versions — the first program I ever wrote.
                 </p>
                 <ul class="project__stack">
                   <li class="project__stack-item">Python</li>

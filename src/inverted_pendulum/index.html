@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inverted Pendulum Stabilization — PID &amp; Swing-Up Control | Pree Simphliphan</title>
+    <meta name="description" content="Control systems project: PID stabilization and energy-based swing-up control for a cart–pendulum system, simulated with RK4 integration in NumPy/Matplotlib, comparing linearized and nonlinear dynamics with an interactive web interface." />
+    <link rel="canonical" href="https://preespp.github.io/all-projects/src/inverted_pendulum/index.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://preespp.github.io/all-projects/src/inverted_pendulum/index.html" />
+    <meta property="og:title" content="Inverted Pendulum Stabilization — PID &amp; Swing-Up Control | Pree Simphliphan" />
+    <meta property="og:description" content="PID stabilization and energy-based swing-up control for a cart–pendulum system, simulated with RK4 integration in NumPy/Matplotlib, comparing linearized and nonlinear dynamics." />
+    <meta property="og:image" content="https://preespp.github.io/all-projects/src/inverted_pendulum/hardware.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+</head>
+<body class="light" id="top">
+    <header class="header center">
+        <h3>
+          <a href="https://preespp.github.io" class="link">Pree Simphliphan</a>
+        </h3>
+
+        <nav class="nav center">
+          <ul class="nav__list center">
+            <li class="nav__list-item">
+              <a class="link link--nav" href="../../index.html">All Projects</a>
+            </li>
+          </ul>
+
+          <button type="button" aria-label="toggle theme" class="btn btn--icon">
+            <span aria-hidden="true" id="btn-theme" class="icon icon--theme">&#9789;</span>
+          </button>
+
+          <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+           <span aria-hidden="true" id="btn-hamburger" class="icon icon--menu">&#9776;</span>
+          </button>
+        </nav>
+      </header>
+
+    <main>
+          <div class="subpage-back">
+            <a href="../../index.html" class="btn btn--outline">Back to All Projects</a>
+          </div>
+          <div class="about center">
+            <h1 class="center">Inverted Pendulum Stability Using Linear Motion</h1>
+            <h4 class="about__role center">Control Systems, Mar 2026 – May 2026</h4>
+          </div>
+          <div class="project-detail">
+            <section class="detail-card">
+              <h2>Project Description</h2>
+              <p>A control systems project on stabilizing an inherently unstable inverted pendulum mounted on a cart. I developed a Python-based simulation framework covering both the linearized and full nonlinear cart–pendulum dynamic models, implemented PID stabilization and energy-based swing-up control, and built real-time visualization plus a prototype web interface so the system's behavior can be explored interactively.</p>
+            </section>
+            <section class="detail-card">
+              <h2>My Responsibilities</h2>
+              <ul class="detail-list">
+                <li>Developed a Python-based simulation framework for inverted pendulum stabilization using both linearized and nonlinear cart–pendulum dynamic models.</li>
+                <li>Implemented and analyzed PID-based stabilization and energy-based swing-up control algorithms for balancing the unstable pendulum system.</li>
+                <li>Performed controller tuning and gain sensitivity analysis for the proportional, integral, and derivative parameters using numerical simulations and response metrics such as overshoot, settling time, and disturbance recovery.</li>
+                <li>Built the simulation environment with NumPy and Matplotlib using fourth-order Runge–Kutta (RK4) numerical integration, real-time visualization, and animation of the pendulum dynamics.</li>
+                <li>Designed a prototype web-based educational interface to visualize control system behavior and allow interactive modification of controller and system parameters.</li>
+              </ul>
+            </section>
+            <section class="detail-card">
+              <h2>Design Decisions &amp; Tradeoffs</h2>
+              <ul class="detail-list">
+                <li>Compared linearized and nonlinear system behavior to evaluate controller robustness outside the small-angle operating region — the linear model is convenient for tuning but its predictions degrade quickly at large angles.</li>
+                <li>Chose RK4 integration over simpler Euler stepping for numerically stable simulation of the fast, stiff pendulum dynamics without an excessively small time step.</li>
+                <li>Separated swing-up (energy-based) from stabilization (PID) with a switching region around the upright equilibrium, since a single linear controller cannot bring the pendulum up from rest.</li>
+              </ul>
+            </section>
+            <section class="detail-card">
+              <h2>Skills I Learned</h2>
+              <ul class="detail-list">
+                <li>Modeling and control of an inherently unstable, nonlinear cart–pendulum system.</li>
+                <li>PID design, gain tuning, and stability analysis around an unstable equilibrium.</li>
+                <li>Energy-based swing-up control and controller switching logic.</li>
+                <li>Numerical simulation with RK4 integration, real-time visualization, and animation in NumPy and Matplotlib.</li>
+              </ul>
+            </section>
+            <section class="detail-card">
+              <h2>Project Links</h2>
+              <div class="detail-links">
+                <a href="https://github.com/preespp/Pendulum_Control">
+                  <span class="btn btn--outline">GitHub</span>
+                </a>
+              </div>
+            </section>
+            <section class="detail-card">
+              <h2>Photos</h2>
+              <div class="photo-grid">
+                <figure>
+                  <img src="hardware.jpg" alt="Inverted pendulum cart hardware setup" height="450">
+                  <figcaption>The cart–pendulum hardware setup.</figcaption>
+                </figure>
+                <figure>
+                  <img src="Python_sim.png" alt="Python cart-pendulum simulation" height="450">
+                  <figcaption>Python simulation of the cart–pendulum dynamics.</figcaption>
+                </figure>
+                <figure>
+                  <img src="graphs.png" alt="Controller response graphs" height="450">
+                  <figcaption>Controller response plots from the simulation.</figcaption>
+                </figure>
+              </div>
+            </section>
+          </div>
+
+    </main>
+
+    <footer class="footer">
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+        <span aria-hidden="true" class="icon icon--top">&#8593;</span>
+        </a>
+    </div>
+    </div>
+
+    <script src="../../script.js"></script>
+</body>
+</html>
